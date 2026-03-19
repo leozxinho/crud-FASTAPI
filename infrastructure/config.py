@@ -6,6 +6,8 @@ class EnvironmentVariables(BaseSettings):
     DB_PASSWORD: str
     DB_LOGIN: str
     DB_NAME: str
+    DB_HOST: str
+    DB_PORT: str
     
     class Config:
         env_file = ".env"

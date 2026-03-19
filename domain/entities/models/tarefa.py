@@ -9,7 +9,7 @@ class TarefaModel(Base):
         Index('idx_tarefas_titulo', "titulo"),
         
         #Indice composto
-        Index('idx_tarefas_concluida_created', "concluido", "created_at"),
+        Index('idx_tarefas_concluido_created', "concluido", "created_at"),
     )
     
     

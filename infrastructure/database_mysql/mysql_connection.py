@@ -12,6 +12,8 @@ DATABASE_URL = "{}://{}:{}@{}:{}/{}".format(
     "mysql+aiomysql",
     env.DB_LOGIN,
     urllib.parse.quote_plus(env.DB_PASSWORD),
+    env.DB_HOST,
+    env.DB_PORT,
     env.DB_NAME
 )
 
